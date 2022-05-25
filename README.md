@@ -23,7 +23,7 @@
     - The toy robot must not fall off the table during movement. This also includes the initial placement of the toy robot.
     - Any move that would cause the robot to fall must be ignored.
 
-## Installation
+## II. Installation
 1. `npm i` - install dependencies
     - the only dependencies used are just for dealing with pathing and some unit tests and mocking
 2. `npm test`
@@ -31,7 +31,7 @@
 3. `npm start` 
     - runs the application
 
-## inputs
+## III. Inputs
 ### valid commands are as explained above:
 1. the command will keep running unit termination of the node app or `exit` command
 2. you can initialize position with `place 1,1,north`
