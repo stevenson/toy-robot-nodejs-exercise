@@ -1,7 +1,7 @@
 # toy-robot-nodejs-exercise
 ## I. Exercise Description
 - simple console application that should take the following commands
-    1. PLACE X, Y, F
+    1. PLACE X,Y,F
         - PLACE command places the robot in a location x,y,f
         - PLACE must have 3 arguments: x y and f
         - x and y are units in a 5 x 5 grid can have a value from 0 to 5
@@ -22,5 +22,24 @@
         - this is why a valid place commandd must be first issued.
     - The toy robot must not fall off the table during movement. This also includes the initial placement of the toy robot.
     - Any move that would cause the robot to fall must be ignored.
+
+## Installation
+1. `npm i` - install dependencies
+    - the only dependencies used are just for dealing with pathing and some unit tests and mocking
+2. `npm test`
+    - will run test
+3. `npm start` 
+    - runs the application
+
+## inputs
+### valid commands are as explained above:
+1. the command will keep running unit termination of the node app or `exit` command
+2. you can initialize position with `place 1,1,north`
+    - the stream is converted to lower case to simplify error handling
+    - the sanitizer also cleans up extra values and tries to understand false input.
+3. you can tell the robot to move with `move`
+4. the robot turns with `left` and `right` command
+5. the `report` command simple console.log the current properties of the robot.
+
 
 
